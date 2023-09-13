@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --main-bakground-color:hsl(0, 100%, 74%);
+    --secondary-backgorund-color:hsl(248, 32%, 49%);
+    --other-background-color:white;
+    --button-background-color:hsl(154, 59%, 51%);
+--main-font-color:white; 
+--seocndary-font-color:hsl(249, 10%, 26%) ;
+--secondary-clear-font-color: hsl(246, 25%, 77%);
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--main-bakground-color) url("../src/images/bg-intro-desktop.png") ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5em ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content .learn-to-code{
+  width: 50%;
+  padding:  3em;
+  color:var(--main-font-color);
+
+}
+.learn-to-code h1{
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+.learn-to-code p {
+ margin-top: 2em;
+}
+.main-content .subscription{
+    width: 50%;
+}
+
+.subscription .try-it-offer{
+    background-color: var(--secondary-backgorund-color);
+}
+
+.subscription .signup{
+    background-color: var(--other-background-color);
+}
+
+@media (min-width:1080px) {
+    .main-content .learn-to-code{
+        max-width: 600px;
+    }
+}
